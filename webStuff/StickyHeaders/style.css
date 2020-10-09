@@ -1,0 +1,13 @@
+div{
+    padding: 2%;
+}
+
+.wrapperDiv{
+    padding: 0;
+    margin: 0;
+}
+
+.sticky{
+    position: fixed;
+    top : 0;
+}

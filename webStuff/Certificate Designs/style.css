@@ -1,0 +1,104 @@
+label,p{
+    font-family: 'Roboto-Regular';
+    font-size: 1.2vw;
+}
+
+.container-fluid{
+    display: flex;
+    background-color: #5BC6D9;
+    width: 100%;
+    height: max-content;
+}
+
+header{
+    width: 60%;
+}
+
+.mainContent{
+    width : 58%;
+}
+
+.nameStuff h3{
+    font-size: 2vw;
+    font-family: 'Open Sans, Semibold';
+    margin: 1%;
+}
+
+
+footer{
+    width: 80%;
+    display: flex;
+    margin-top: 8%;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+footer img{
+    width: 80%;
+    height: 80%;
+}
+
+.signature{
+    text-align: center;
+}
+
+.signature h2{
+    color: grey;
+    font-size: 2vw;
+    font-family: 'Roboto-Regular';
+    padding: 2vw;
+}
+
+.signature svg{
+    width: 80%;
+    height: 20%;
+    border-bottom: 1px solid black;
+}
+
+header h1{
+    color: #3BAAE3;
+    padding: 2%;
+    text-align: center;
+    letter-spacing: 0;
+    font-size: 3vw;
+    font-family: 'Open Sans, Bold';
+    border-top: 1px solid #3BAAE3;;
+    border-bottom: 1px solid #3BAAE3;;
+}
+
+.underLine{
+    min-width: 8vw;
+    min-height: 11.6vh;
+    text-align: unset;
+    border-bottom: 1px solid black;
+    display: inline;
+    margin: 0;
+}
+
+.underLine h3{
+    margin: 0;
+    padding: 1vh;
+    font-size: 1.5vw;
+    border-bottom: 1px solid black;
+}
+
+#dateContent{
+    position: inherit;
+    margin-top: 5.5455%;
+}
+
+
+.certificate-content{
+    width: 90%;
+    height: max-content;
+    margin: 5% 4% 5% 4%;
+    background-color: white;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    border-radius: 7px ;
+}

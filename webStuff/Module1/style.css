@@ -1,0 +1,311 @@
+body{
+  background-color: #818181;
+}
+
+::selection{background-color:none; color:inherit;}
+
+
+/* Left Side Nav */
+
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: rgb(97, 245, 159);
+  overflow-x: hidden; 
+  padding-top: 10px; 
+  transition: 0.5s;
+}
+
+.sidenav .toplinks{
+  position: relative;
+  top: 150px;
+  margin-left: 30px;
+}
+
+.sidenav a {
+  padding: 32px 32px 32px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn{
+  top: 5%;
+}
+
+.sidenav img, .closebtn img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding-left: 50px;
+    margin-left: 0;
+}
+
+.closebtn label{
+  position: absolute;
+  cursor: pointer;
+  top: 15%;
+  left: 100%;
+  margin-left: 10px;
+  z-index: 1000;
+}
+
+/* Right Side Navigation */
+.sidenav1 {
+  height: 100%; 
+  width: 300px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  right: 0;
+  background-color: rgb(118, 212, 157);
+  padding-top: 20px; 
+  transition: 0.5s;
+  padding: 8px 8px 8px 16px;
+  box-shadow: 0 8px 16px 0 rgba(96, 38, 150, 0.9);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav1 .interaction img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.interaction button{
+  border-radius: 50%;
+}
+
+.sidenav1 .interaction h1{
+  color: rgba(140, 30, 230, 0.925);
+  display: none;
+}
+
+/* Arrow here */
+.arrow{
+  animation: bounce 1s infinite;
+  color: #14B524;
+  font-size: 10rem;
+  z-index: 1000000;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+/* Arrow Bouncing Animation */
+@keyframes bounce {
+   0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+   40% {transform: translateY(-60px);} 
+   60% {transform: translateY(-35px);} 
+} 
+
+ /* Keyboard CSS */
+.keyboard{
+  width:800px; height: 320px;
+  margin: 0px auto;
+  color: #eee;
+  position: absolute;
+  transition: all 0.8s ease-in-out;
+}
+
+.keyboard:hover{
+  left: -125px;
+  transition: all 0.8s ease-in-out;
+}
+
+.lights{
+  float:right;
+  position:relative;
+  top:-45px;
+  right:8px;
+  padding:0;
+  margin:0;
+}
+.lights span{margin:0 20px 0 20px; padding:0; text-align: center;}
+.lights span:after{
+  content:"";
+  width:11px; height:8px;
+  top: 22px; margin-left:-9px;
+  background-color:#DBB921;
+  position:absolute;
+  border-radius: 3px;
+}
+
+.key{
+  width: 40px; height:40px;
+  display:block;
+  background-color:#333;
+  text-align: left;
+  padding-left: 8px;
+  line-height: 29px;
+  border-radius:2px;
+  float:left; margin-left: 2px;
+  margin-bottom:2px;
+  cursor: pointer;
+  transition: box-shadow 0.7s ease;
+}
+
+/* Rows Of KeyBoard */
+.section-a{width:650px; height:260px; float:left;}
+.section-b{width:150px; height:260px; float:left;}
+
+/* Special Keys in Keyboard */
+.function{font-size: 12px; width:30px; height:30px; margin-bottom:15px;}
+.small{font-size:10px; line-height:13px; text-align: center; padding:0 5px; padding-top:2px; height:28px !important;}
+.space1{margin-right: 43px !important;}
+.space2{margin-right: 25px !important;}
+.dual {font-size: 14px; line-height: 20px; width:30px; }
+.backspace {width:84px; font-size: 12px;}
+.tab {width: 50px; line-height: 40px; font-size:13px;}
+.letter{width:30px;}
+.slash{width:64px;}
+.caps{width:70px; font-size:12px; line-height:18px;}
+.enter{width:92px; line-height:40px; text-align: center; padding-left:0;}
+.shift.left{width: 90px;line-height: 40px; font-size:13px;}
+.shift.right{width: 104px;line-height: 40px; font-size:13px;}
+.ctrl{width: 50px; line-height: 40px; font-size:13px;}
+.space{width:234px;}
+.arrows{position:relative; top:42px;}
+.sec-func .key{width: 32px; font-size:10px; text-align:left; line-height:40px; float:left;}
+.sec-func div.dual{line-height:20px;}
+.arrows .key{text-align: center; padding-left: 7px; margin-left:2px;}
+.hidden{visibility: hidden;}
+
+.key:hover{box-shadow:0px 5px 10px rgb(5, 7, 133); z-index:1000;}
+
+@keyframes fadeInOut{
+  from{
+    box-shadow: 0 0 0 0;
+    font-size: 1rem;
+  }
+  to{
+    box-shadow:0px 5px 10px rgb(5, 7, 133);
+    font-size: 1.5rem;
+  }
+}
+
+
+/* Main Content */
+
+#main {
+  transition: margin-left .5s;
+  margin-right: 250px;
+  margin-left: 50px;
+}
+
+#leftnav{
+    position: absolute;
+    text-decoration: none;
+    font-size: 25px;
+    color: #d6d5d5;
+    display: block;
+    transition: 0.3s;
+    margin-left: -30px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+#leftnav label:hover{
+    color: #57e62c;
+}
+
+#leftnav img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+/* Cards  */
+.column {
+  float: left;
+  padding: 0 10px;
+}
+
+.row {
+    margin: 0 150px;
+    padding-bottom: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 300px;
+  height: 400px;
+  transition: 0.3s;
+  background-color: #CCC;
+}
+
+.card img{
+    width: 300px;
+    height: 300px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 2px rgba(140, 38, 150, 0.5);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.block {
+  display: block;
+  width: 80%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border: none;
+  margin-left: 20px;
+  background-color: rgb(18, 153, 216);
+  padding: 14px 14px 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.block:hover {
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+}
+
+
+/* Success and main blocks */
+
+.block0{
+  opacity: 1;
+}
+
+.block1{
+  opacity: 0;
+}
+
+.block0, .block1{
+  position: absolute;
+  margin-left: 50px;
+  transition: all 1s ease-in-out;
+  z-index: -1;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
